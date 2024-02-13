@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.4"
+  },
+  "name": "chat-app-new",
+  "version": "1.0.0",
+  "description": "Real-time chat application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  }
+}
+

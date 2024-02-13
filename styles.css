@@ -1,0 +1,80 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  #chat {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #messages {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  #messageForm {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  #messageInput {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  #messageSubmit {
+    background-color: #e8a3f6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  #messageSubmit:hover {
+    background-color: #8c1280;
+  }
+  
+  .message-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .message.own {
+    background-color: #f0c6f8;
+    color: #000;
+    align-self: flex-end;
+}
+
+/* Estilos para mensajes del otro usuario (alineados a la izquierda) */
+.message.other-user {
+    background-color: #e0e0e0;
+    color: #000;
+    align-self: flex-start;
+}
+.chat-logo {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto; /* Centrar la imagen */
+  }
+  

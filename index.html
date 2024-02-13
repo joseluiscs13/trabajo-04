@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Chat en tiempo real</title>
+  <!-- Enlaces a Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-MFlnLMYlPYdsk5jKBNG+XWKJ5LlO3UJgzeJ9hHwF6v+ldzx3ZlNT/6h8bfbw6x5g" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container mt-5">
+    <div id="chat" class="mx-auto">
+      <div class="chat-header">
+        <h1 class="chat-title">Chat en tiempo real</h1>
+        <img src="logo.jpeg" alt="Logo" class="chat-logo">
+      </div>
+      <div id="messages" class="message-container">
+      </div>
+      <form id="messageForm">
+        <div class="input-group mb-3">
+          <input type="text" id="messageInput" class="form-control" placeholder="Escribe tu mensaje">
+          <button id="messageSubmit" type="submit" class="btn btn-success">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+  <script src="chat.js"></script>
+
+  <!-- Agrega el script de Bootstrap JS al final del cuerpo del documento -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-r3D5mbP43f1I4es5CM5IvL9bYs/X2lASqBYlqUNWqNWx9Llkojve1ryIUJHA2BEQ" crossorigin="anonymous"></script>
+</body>
+</html>
